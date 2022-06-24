@@ -1,0 +1,16 @@
+<section class="row justify-content-center mt-4"  style="height: 900px;position: relative;">
+    <app-skills-animation></app-skills-animation>
+    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mt-4 ">
+        <div class="">
+            <p class="display-6">Skills and experience</p>
+        </div>
+        <small class="lead">These are languages, frameworks, libraries and technologies I have experience working with</small>
+        <div class="row mt-4 justify-content-center">
+            <div *ngFor="let technology of technologies" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-2 mt-4 ">
+                <img class="mt-4 " height="100" width="100" src={{technology.img}} alt="">
+            </div>
+        </div>
+    </div>
+
+
+</section>

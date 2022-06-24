@@ -1,0 +1,45 @@
+  
+<div class="row gx-5 justify-content-center mt-5">
+    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+        <small class="display-6">{{title}}</small>
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 mt-4" align="center">
+        <small class="lead">To do</small>
+        
+        <div
+        cdkDropList
+        #todoList="cdkDropList"
+        [cdkDropListData]="todo"
+        [cdkDropListConnectedTo]="[doneList]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+        class="border border-dark row mt-4 gx-2 gy-2 p-2"
+        >
+          <div class="border border-warning col-4 col-sm-6 col-md-4 col-lg-4 col-xl-4 cursor" 
+          *ngFor="let item of todo" cdkDrag align="center">
+              {{item}}
+          </div>
+      </div>
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 mt-4" align="center">
+        <small class="lead">Done</small>
+
+        <div
+        cdkDropList
+        #doneList="cdkDropList"
+        [cdkDropListData]="done"
+        [cdkDropListConnectedTo]="[todoList]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+        class="border border-dark row mt-4 gx-2 gy-2 p-2" 
+  
+        >
+          <div class="border border-warning col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 cursor" 
+          *ngFor="let item of done" cdkDrag align="center">
+              {{item}}
+          </div>
+      </div>
+    
+    </div>
+</div>
+   
