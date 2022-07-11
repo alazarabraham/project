@@ -25,9 +25,8 @@ import { RouterModule } from '@angular/router';
     HealthComponent,
     LoginComponent,
     SkillsComponent,
-    SkillsAnimationComponent,
-    AppRoutingModule
-  ],
+    SkillsAnimationComponent
+    ],
   imports: [
     BrowserModule,
     RouterModule,
