@@ -1,8 +1,8 @@
 .header{
     position: relative;
-    background:linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0,0,0,1)), url('https://media.cntraveler.com/photos/5e064811dd3c6a0009234419/master/pass/New-Mexico-White-Sands-GettyImages-1026457358.jpg');
+    /* background:linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0,0,0,1)), url('https://media.cntraveler.com/photos/5e064811dd3c6a0009234419/master/pass/New-Mexico-White-Sands-GettyImages-1026457358.jpg');  */
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     max-height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
 .header .clouds img{
     position: absolute;
-    bottom: 0;
+    top: 300px;
     max-width: 100%;
     animation: animate calc(8s * var(--i)) linear infinite; 
 }

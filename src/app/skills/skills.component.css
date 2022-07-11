@@ -42,7 +42,7 @@
     z-index: 2;
     animation: cloud 1s linear infinite;
 }
-@keyframes plane{
+/* @keyframes plane{
     0%{
         transform: translate(2px, 2px);
     }
@@ -61,7 +61,7 @@
     40%,100%{
         transform: translateX(-400px);
     }
-}
+} */
 
 .cloud img:nth-child(1)
 {

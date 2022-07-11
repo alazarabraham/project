@@ -1,22 +1,15 @@
-<section class="row justify-content-center mt-4"  style="height: 900px;">
-    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 mt-4">
+<section class="row justify-content-center"  style="height: 500px;">
+    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-12">
         <div class="row mt-4">
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 mt-3">
-                <small class="display-6">
-                    Skills and Experience
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 mt-4">
+                <small class="fs-4 fw-normal">
+                    Software Development Experience
                 </small>
                 <div class="box">
-                    <!-- <div class="plane">
-                        <img *ngIf="firstImg" height="100"  src="https://freesvg.org/img/DoveAndOliveBranch3.png" alt="">
-                        <img *ngIf="secondImg" height="100"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Peace_dove.svg/2108px-Peace_dove.svg.png" alt="">
-                        <img *ngIf="thirdImg" height="100"  src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f54a.png" alt="">
-                        <img *ngIf="fourthImg" height="100"  src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/joypixels/257/dove_1f54a.png" alt="">
-                        <img *ngIf="fifthImg" height="100"  src="https://www.ilkleymanorhouse.org/wp-content/uploads/2019/03/dove-41260_1280.png" alt="">
-                    </div> -->
                     <div class="plane">
-                        <img *ngIf="firstImg" height="100"  src="https://www.svgrepo.com/show/295826/coding-seo-and-web.svg" alt="">
-                        <img *ngIf="secondImg" height="100"  src="https://www.svgrepo.com/show/294200/coding-programming-language.svg" alt="">
-                        <img *ngIf="thirdImg" height="100"  src="https://www.svgrepo.com/show/278774/coding-html.svg" alt="">
+                        <img *ngIf="firstImg" height="100"  src="https://www.svgrepo.com/show/249772/laptop-coding.svg" alt="">
+                        <img *ngIf="secondImg" height="100"  src="https://www.svgrepo.com/show/416280/code-coding-development.svg" alt="">
+                        <img *ngIf="thirdImg" height="100"  src="https://www.svgrepo.com/show/135149/software.svg" alt="">
                         <img *ngIf="fourthImg" height="100"  src="https://www.svgrepo.com/show/65343/database.svg" alt="">
                         <img *ngIf="fifthImg" height="100"  src="https://www.svgrepo.com/show/31307/server.svg" alt="">
 
@@ -29,12 +22,13 @@
                 </div>
 
             </div>
-            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mt-4">
                 <mat-tab-group (selectedTabChange)="changeAnimationImage($event)">
                     <mat-tab label="Languages">
                         <div class="row mt-4 justify-content-center">
                             <div *ngFor="let language of languages" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{language.img}} alt="">
+                                <small class="d-block mt-4">{{language.name}}</small>
                             </div>
                         </div>
                     </mat-tab>
@@ -42,6 +36,7 @@
                         <div class="row mt-4 justify-content-center">
                             <div *ngFor="let framework of frameworks" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{framework.img}} alt="">
+                                <small class="d-block mt-4">{{framework.name}}</small>
                             </div>
                         </div>
                     </mat-tab>
@@ -49,6 +44,7 @@
                         <div class="row mt-4 justify-content-center">
                             <div *ngFor="let buildTool of buildTools" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{buildTool.img}} alt="">
+                                <small class="d-block mt-4">{{buildTool.name}}</small>
                             </div>
                         </div>
                     </mat-tab>
@@ -56,6 +52,7 @@
                         <div class="row mt-4 justify-content-center">
                             <div *ngFor="let database of databases" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{database.img}} alt="">
+                                <small class="d-block mt-4">{{database.name}}</small>
                             </div>
                         </div>
                     </mat-tab>
@@ -63,6 +60,7 @@
                         <div class="row mt-4 justify-content-center">
                             <div *ngFor="let server of servers" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{server.img}} alt="">
+                                <small class="d-block mt-4">{{server.name}}</small>
                             </div>
                         </div>
                     </mat-tab>

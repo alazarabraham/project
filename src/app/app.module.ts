@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillsAnimationComponent } from './skills-animation/skills-animation.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SkillsAnimationComponent } from './skills-animation/skills-animation.co
     LoginComponent,
     SkillsComponent,
     SkillsAnimationComponent,
+    IconsComponent,
   ],
   imports: [
     BrowserModule,
