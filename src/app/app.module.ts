@@ -28,6 +28,7 @@ import { RouterModule } from '@angular/router';
     SkillsComponent,
     SkillsAnimationComponent,
     IconsComponent,
+    AppRoutingModule
   ],
   imports: [
     BrowserModule,
