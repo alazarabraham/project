@@ -1,35 +1,41 @@
-<section class="row justify-content-center"  >
-    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-12">
-        <div class="row mt-4">
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 mt-4">
-                <small class="fs-4 fw-normal">
-                    Software Development Experience
-                </small>
-                <p class="d-block mt-4">
-                    These are technologies I have experience working with.
-                </p>
-                <div class="box">
-                    <div class="plane">
-                        <img *ngIf="firstImg" height="100"  src="https://www.svgrepo.com/show/249772/laptop-coding.svg" alt="">
-                        <img *ngIf="secondImg" height="100"  src="https://www.svgrepo.com/show/416280/code-coding-development.svg" alt="">
-                        <img *ngIf="thirdImg" height="100"  src="https://www.svgrepo.com/show/135149/software.svg" alt="">
-                        <img *ngIf="fourthImg" height="100"  src="https://www.svgrepo.com/show/65343/database.svg" alt="">
-                        <img *ngIf="fifthImg" height="100"  src="https://www.svgrepo.com/show/31307/server.svg" alt="">
-
+<section class="row justify-content-center" >
+    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-12 mt-4">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 mt-5">
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-12 col-xl-12">
+                        <small class="fs-4 fw-normal">
+                            Software Development Experience
+                        </small>
+                        <p class="d-block mt-4">
+                            These are technologies I have experience working with.
+                        </p>
                     </div>
-                    <div class="cloud">
-                        <img height="100" src="https://www.seekpng.com/png/full/78-780259_the-next-generation-of-cloud-cloud-icon-white.png" alt="">
-                        <img height="100" src="https://www.seekpng.com/png/full/78-780259_the-next-generation-of-cloud-cloud-icon-white.png" alt="">
-                        <img height="100" src="https://www.seekpng.com/png/full/78-780259_the-next-generation-of-cloud-cloud-icon-white.png" alt="">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-12 col-xl-12 align-self-center mt-3" align="center">
+                        <!-- <div class="box">
+                            <div class="plane"> -->
+                                <img *ngIf="firstImg" height="100"  src="https://www.svgrepo.com/show/249772/laptop-coding.svg" alt="">
+                                <img *ngIf="secondImg" height="100"  src="https://www.svgrepo.com/show/416280/code-coding-development.svg" alt="">
+                                <img *ngIf="thirdImg" height="100"  src="https://www.svgrepo.com/show/135149/software.svg" alt="">
+                                <img *ngIf="fourthImg" height="100"  src="https://www.svgrepo.com/show/65343/database.svg" alt="">
+                                <img *ngIf="fifthImg" height="100"  src="https://www.svgrepo.com/show/31307/server.svg" alt="">
+<!-- 
+                            </div>
+                            <div class="cloud"> -->
+                                <!-- <img height="100" src="https://www.seekpng.com/png/full/78-780259_the-next-generation-of-cloud-cloud-icon-white.png" alt="">
+                                <img height="100" src="https://www.seekpng.com/png/full/78-780259_the-next-generation-of-cloud-cloud-icon-white.png" alt="">
+                                <img height="100" src="https://www.seekpng.com/png/full/78-780259_the-next-generation-of-cloud-cloud-icon-white.png" alt=""> -->
+                            <!-- </div>
+                        </div> -->
                     </div>
                 </div>
 
             </div>
-            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 mt-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mt-4">
                 <mat-tab-group (selectedTabChange)="changeAnimationImage($event)">
                     <mat-tab label="Languages">
                         <div class="row mt-4 justify-content-center">
-                            <div *ngFor="let language of languages" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
+                            <div *ngFor="let language of languages" class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{language.img}} alt="">
                                 <small class="d-block mt-4">{{language.name}}</small>
                             </div>
@@ -37,7 +43,7 @@
                     </mat-tab>
                     <mat-tab label="Frameworks and libraries">
                         <div class="row mt-4 justify-content-center">
-                            <div *ngFor="let framework of frameworks" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
+                            <div *ngFor="let framework of frameworks" class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{framework.img}} alt="">
                                 <small class="d-block mt-4">{{framework.name}}</small>
                             </div>
@@ -45,7 +51,7 @@
                     </mat-tab>
                     <mat-tab label="Build Tools">
                         <div class="row mt-4 justify-content-center">
-                            <div *ngFor="let buildTool of buildTools" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
+                            <div *ngFor="let buildTool of buildTools" class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{buildTool.img}} alt="">
                                 <small class="d-block mt-4">{{buildTool.name}}</small>
                             </div>
@@ -53,7 +59,7 @@
                     </mat-tab>
                     <mat-tab label="Database">
                         <div class="row mt-4 justify-content-center">
-                            <div *ngFor="let database of databases" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
+                            <div *ngFor="let database of databases" class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{database.img}} alt="">
                                 <small class="d-block mt-4">{{database.name}}</small>
                             </div>
@@ -61,7 +67,7 @@
                     </mat-tab>
                     <mat-tab label="Servers">
                         <div class="row mt-4 justify-content-center">
-                            <div *ngFor="let server of servers" class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
+                            <div *ngFor="let server of servers" class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">
                                 <img class="mt-4 " height="80" width="80" src={{server.img}} alt="">
                                 <small class="d-block mt-4">{{server.name}}</small>
                             </div>
