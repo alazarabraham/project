@@ -1,7 +1,7 @@
-<section class="row justify-content-center" >
-    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-12 mt-4">
+<section class="row justify-content-center mb-4" id="skills" >
+    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-12 mt-4 mb-4" align="center">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 mt-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 mt-5 mb-5">
                 <div class="row">
                     <div class="col-8 col-sm-8 col-md-8 col-lg-12 col-xl-12">
                         <small class="fs-4 fw-normal">
@@ -31,8 +31,8 @@
                 </div>
 
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mt-4">
-                <mat-tab-group (selectedTabChange)="changeAnimationImage($event)">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mt-4 mb-5">
+                <mat-tab-group (selectedTabChange)="changeAnimationImage($event);" >
                     <mat-tab label="Languages">
                         <div class="row mt-4 justify-content-center">
                             <div *ngFor="let language of languages" class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4 mb-4" align="center">

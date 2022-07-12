@@ -64,6 +64,7 @@ export class SkillsComponent implements OnInit {
 
 
   changeAnimationImage(e: any){
+    
     if(e.index == 0){
       this.firstImg = true;
       this.secondImg = false;
