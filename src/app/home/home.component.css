@@ -23,7 +23,7 @@
 @media (max-width: 480px) {
     .header .clouds img{
         position: absolute;
-        top: 490px;
+        top: 520px;
         max-width: 100%;
         animation: animate calc(8s * var(--i)) linear infinite; 
     }
