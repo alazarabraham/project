@@ -18,13 +18,56 @@
     overflow: hidden;
 }
 
-.header .clouds img{
-    position: absolute;
-    top: 300px;
-    max-width: 100%;
-    animation: animate calc(8s * var(--i)) linear infinite; 
-}
 
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .header .clouds img{
+        position: absolute;
+        top: 490px;
+        max-width: 100%;
+        animation: animate calc(8s * var(--i)) linear infinite; 
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .header .clouds img{
+        position: absolute;
+        top: 490px;
+        max-width: 100%;
+        animation: animate calc(8s * var(--i)) linear infinite; 
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    .header .clouds img{
+        position: absolute;
+        top: 440px;
+        max-width: 100%;
+        animation: animate calc(8s * var(--i)) linear infinite; 
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .header .clouds img{
+        position: absolute;
+        top: 440px;
+        max-width: 100%;
+        animation: animate calc(8s * var(--i)) linear infinite; 
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .header .clouds img{
+        position: absolute;
+        top: 350px;
+        max-width: 100%;
+        animation: animate calc(8s * var(--i)) linear infinite; 
+    }
+}
 @keyframes animate
 {
     0%{
