@@ -13,13 +13,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SkillsComponent } from './skills/skills.component';
 import { SkillsAnimationComponent } from './skills-animation/skills-animation.component';
 import { RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SkillsComponent,
-    SkillsAnimationComponent
+    SkillsAnimationComponent,
+    ContactComponent
     ],
   imports: [
     BrowserModule,
