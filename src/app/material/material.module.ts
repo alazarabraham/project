@@ -83,7 +83,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
-    DragDropModule
+    DragDropModule,
+    MatProgressBarModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -121,7 +122,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
-    DragDropModule
+    DragDropModule,
+    MatProgressBarModule
+
     
   ]
 })
