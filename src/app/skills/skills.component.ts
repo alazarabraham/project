@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Technology } from '../model/Technology';
 
 @Component({
@@ -8,13 +9,17 @@ import { Technology } from '../model/Technology';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
   firstImg: boolean = true;
   secondImg: boolean = false;
   thirdImg: boolean = false;
   fourthImg: boolean = false;
   fifthImg: boolean = false;
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action);
+  }
 
   languages: any[] = [
     {name: "Java", img: "https://www.svgrepo.com/show/303388/java-4-logo.svg", description: "Java is my favorite language. Besides Javascript, most of my experience is with Java. Have worked with many Java technologies, including: Java Standard libraries, Apache Commons, Jackson, Maven, Log4j, JMS, etc"}, 
@@ -100,11 +105,5 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  over(){
-    console.log("Mouseover called");
-  }
 
-  out(){
-    console.log("Mouseout called");
-  }
 }
