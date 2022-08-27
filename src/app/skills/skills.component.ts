@@ -42,7 +42,7 @@ export class SkillsComponent implements OnInit {
       description: "Have experience working with Python, however this is not my primary language."}, 
     {
       name: "SQL", img: "https://www.svgrepo.com/show/120229/sql.svg", 
-      description: "Experienced in writing SQL syntax and have understanding and experience with both Relational and Non-Relational Databases."},
+      description: "Well versed in SQL syntax and have understanding and experience with both Relational and Non-Relational Databases."},
     {
       name: "XML", img: "https://www.svgrepo.com/show/255827/xml.svg", 
       description: "Have worked extensively with XML document structure."},
