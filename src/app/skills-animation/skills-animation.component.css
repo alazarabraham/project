@@ -2,7 +2,6 @@
     position: relative; 
     height: 150px;
     /* background: rgba(0, 0, 0, .4);; */
-    border-radius: 50%;
     /* border: 10px solid linear-gradient(#6ab9ff, #0090d2); */
     box-shadow: inset 00 100px rgba(0,0,0,.8), 
     0 20 100px rgba(0,0,0,.8);
