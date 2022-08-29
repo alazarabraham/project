@@ -12,8 +12,5 @@ export class SkillsAnimationComponent implements OnInit {
   ngOnInit(): void {
   }
    
-  scrollToSkills(){
-    let element = <HTMLDivElement> document.getElementById('skills');
-    element.scrollIntoView();
-  }
+
 }
