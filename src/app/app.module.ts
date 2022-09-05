@@ -14,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { SkillsAnimationComponent } from './skills-animation/skills-animation.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { SoftwarePortfolioComponent } from './software-portfolio/software-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     SkillsComponent,
     SkillsAnimationComponent,
+    SoftwarePortfolioComponent,
     ],
   imports: [
     BrowserModule,
