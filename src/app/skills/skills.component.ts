@@ -24,25 +24,25 @@ export class SkillsComponent implements OnInit {
   languages: any[] = [
     {
       name: "Java", img: "https://www.svgrepo.com/show/303388/java-4-logo.svg", 
-      description: "Primary language, besides Javascript. Have solid understanding of Java programming, including but not limited to: Java class structure and design, Core Java APIs, Design Patterns and principals, etc."}, 
+      description: "Primary language, besides Javascript. Proficient in Java and Java concepts, including but not limited to: Java class structure and design, Core Java APIs, Design Patterns and principals, Object Oriented Programming, etc."}, 
     {
       name: "Javascript", img: "https://www.svgrepo.com/show/373703/js.svg", 
-      description: "Have experience with a number of Javascript frameworks and technologies, including: Angular, React, ExpressJS, NodeJS, JQuery, etc."}, 
+      description: "Proficient in Javascript and have experience with a number of Javascript frameworks and technologies, including: Angular, React, ExpressJS, NodeJS, JQuery, etc."}, 
     {
       name: "TypeScript", img: "https://www.svgrepo.com/show/349540/typescript.svg", 
-      description: "Have worked extensively with Typescript. Primarily when working on Angular Typescript projects and applications."}, 
+      description: "Have worked extensively with Typescript. In particular when working with Angular Typescript."}, 
     {
       name: "HTML", img: "https://www.svgrepo.com/show/80703/html.svg", 
-      description: "Have worked extensively with HTML and understand most HTML concepts, including, but not limited to:  Document Object Model, Elements/Tags, Forms, Events, etc."}, 
+      description: "Proficient in HTML and HTML concepts, including, but not limited to:  Document Object Model, Elements/Tags, Forms, Events, etc."}, 
     {
       name: "CSS", img: "https://www.svgrepo.com/show/134149/css.svg", 
-      description: "Have a lot of experience working with CSS styling. Have solid work experience with Bootstrap and Angular Material frameworks."}, 
+      description: "Proficient in CSS and CSS styling. Have extensive work experience with Bootstrap and Angular Material frameworks."}, 
     {
       name: "Python", img: "https://www.svgrepo.com/show/166811/py.svg", 
-      description: "Have experience working with Python, however this is not my primary language."}, 
+      description: "Have experience working with Python and understand Python syntax."}, 
     {
       name: "SQL", img: "https://www.svgrepo.com/show/120229/sql.svg", 
-      description: "Well versed in SQL syntax and have understanding and experience with both Relational and Non-Relational Databases."},
+      description: "Proficient in SQL and SQL syntax. Have experience with both Relational and Non-Relational Databases."},
     {
       name: "XML", img: "https://www.svgrepo.com/show/255827/xml.svg", 
       description: "Have worked extensively with XML document structure."},
@@ -51,34 +51,34 @@ export class SkillsComponent implements OnInit {
   frameworks: Technology[] = [
     {
       name: "Angular", img: "https://www.svgrepo.com/show/349591/angular.svg", 
-      description: ""}, 
+      description: "Proficient in Angular. Have worked extensively with Angular Typescript and Angular JS. My favorite web framework to work with."}, 
     {
       name: "React", img: "https://www.svgrepo.com/show/354259/react.svg", 
-      description: ""}, 
+      description: "Have extensive experience working with ReactJS and have developed many projects with the framework."}, 
     {
       name: "NodeJS", img: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg", 
-      description: ""}, 
+      description: "Have extensive experience with NodeJS and appreciate the technology."}, 
     {
       name: "ExpressJS", img: "https://fd-development.com/images/expressjs.png", 
-      description: ""},
+      description: "Have developed projects with ExpressJS framework and have great familiarity with the framework."},
     {
       name: "Spring Boot", img: "https://www.openxcell.com/wp-content/uploads/2021/10/springboot-inner.svg", 
-      description: ""}, 
+      description: "Proficient in Spring boot and have extensive experience working with it. Enjoy developing and learning Spring Boot."}, 
     {
       name: "Spring Framework", img: "https://1.bp.blogspot.com/-trIS3Iz94SE/YIr3iwBC23I/AAAAAAAAtVQ/oieBThHJU3wPJkGOATDSvi6RySwlowM5ACLcBGAsYHQ/s452/spring-logo.png", 
-      description: ""}, 
+      description: "Have extensively worked with Spring Framework and understand the framework well."}, 
     {
       name: "Struts", img: "https://www.svgrepo.com/show/354402/struts.svg", 
-      description: ""}, 
+      description: "Have had exposure to Struts in applications I have encountered in my work"}, 
     {
       name: "Hibernate", img: "https://www.svgrepo.com/show/353874/hibernate.svg", 
-      description: ""}, 
+      description: "Enjoy using Hibernate and have familiarity with the library."}, 
     {
       name: "Bootstrap", img: "https://www.svgrepo.com/show/353498/bootstrap.svg", 
-      description: ""}, 
+      description: "Proficient with bootstrap and have extensive work experience with the framework."}, 
     {
       name: "Angular Material", img: "https://repository-images.githubusercontent.com/220078160/9353b600-0e54-11ea-9712-b79b66b93c00", 
-      description: ""}, 
+      description: "Have worked with Angular Material extensively, and have developed many components with the framework."}, 
   ];
 
   buildTools: Technology[] = [
