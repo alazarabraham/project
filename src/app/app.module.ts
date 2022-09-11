@@ -15,6 +15,7 @@ import { SkillsAnimationComponent } from './skills-animation/skills-animation.co
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SoftwarePortfolioComponent } from './software-portfolio/software-portfolio.component';
+import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SoftwarePortfolioComponent } from './software-portfolio/software-portfo
     SkillsComponent,
     SkillsAnimationComponent,
     SoftwarePortfolioComponent,
+    ContactinfoComponent,
     ],
   imports: [
     BrowserModule,
