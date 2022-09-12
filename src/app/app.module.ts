@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SoftwarePortfolioComponent } from './software-portfolio/software-portfolio.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ContactinfoComponent } from './contactinfo/contactinfo.component';
     SkillsAnimationComponent,
     SoftwarePortfolioComponent,
     ContactinfoComponent,
+    ResumeComponent,
     ],
   imports: [
     BrowserModule,
