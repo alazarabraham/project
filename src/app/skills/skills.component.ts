@@ -62,7 +62,7 @@ export class SkillsComponent implements OnInit {
       name: "ExpressJS", img: "https://fd-development.com/images/expressjs.png", 
       description: "Have developed projects with ExpressJS framework and have great familiarity with the framework."},
     {
-      name: "Spring Boot", img: "https://www.openxcell.com/wp-content/uploads/2021/10/springboot-inner.svg", 
+      name: "Spring Boot", img: "https://cdn.worldvectorlogo.com/logos/spring-3.svg", 
       description: "Proficient in Spring boot and have extensive experience working with it. Enjoy developing and learning Spring Boot."}, 
     {
       name: "Spring Framework", img: "https://1.bp.blogspot.com/-trIS3Iz94SE/YIr3iwBC23I/AAAAAAAAtVQ/oieBThHJU3wPJkGOATDSvi6RySwlowM5ACLcBGAsYHQ/s452/spring-logo.png", 
