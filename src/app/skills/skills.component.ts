@@ -65,7 +65,7 @@ export class SkillsComponent implements OnInit {
       name: "Spring Boot", img: "https://cdn.worldvectorlogo.com/logos/spring-3.svg", 
       description: "Proficient in Spring boot and have extensive experience working with it. Enjoy developing and learning Spring Boot."}, 
     {
-      name: "Spring Framework", img: "https://1.bp.blogspot.com/-trIS3Iz94SE/YIr3iwBC23I/AAAAAAAAtVQ/oieBThHJU3wPJkGOATDSvi6RySwlowM5ACLcBGAsYHQ/s452/spring-logo.png", 
+      name: "Spring Framework", img: "https://download.logo.wine/logo/Spring_Framework/Spring_Framework-Logo.wine.png", 
       description: "Have extensively worked with Spring Framework and understand the framework well."}, 
     {
       name: "Struts", img: "https://www.svgrepo.com/show/354402/struts.svg", 
