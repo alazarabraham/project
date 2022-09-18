@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Technology } from '../model/Technology';
+import { OnboardingService } from "@rosen-group/ngx-onboarding";
 
 @Component({
   selector: 'app-skills',
@@ -8,14 +9,44 @@ import { Technology } from '../model/Technology';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-
-  constructor(private snackBar: MatSnackBar) { }
-
   firstImg: boolean = true;
   secondImg: boolean = false;
   thirdImg: boolean = false;
   fourthImg: boolean = false;
   fifthImg: boolean = false;
+  walkThrough: any[] = [];
+  constructor(private snackBar: MatSnackBar, private onboardingService: OnboardingService) {
+    onboardingService.configure({
+      iconConfiguration: {
+          matIconName: 'tips_and_updates'
+      },
+      textConfiguration: {
+        regularFontFamily: 'Sans-Serif, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;',
+        scriptFontFamily: 'Sans-Serif,"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;'
+    },
+      
+    });
+    this.walkThrough = [
+      {
+        selector: "#nav",
+        group: "example2",
+        position: "below",
+        textAlign: "left",
+        headline: "Navigation",
+        details: "Navigate between pages here. Click anywhere on the page to continue."
+      },
+      {
+        selector: "#stepOne",
+        group: "example1",
+        position: "right",
+        textAlign: "left",
+        headline: "Tabs",
+        details: "Have included technologies I have experience with here, please use tabs to navigate. Hover over icons for more information. Click anywhere on the page to continue."
+      }
+    ];
+   }
+
+
 
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action);
@@ -163,6 +194,8 @@ export class SkillsComponent implements OnInit {
     }
   }
   ngOnInit(): void {
+    this.onboardingService.register(this.walkThrough);
+
   }
 
 

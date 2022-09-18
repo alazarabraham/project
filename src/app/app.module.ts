@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 import { SoftwarePortfolioComponent } from './software-portfolio/software-portfolio.component';
 import { ContactinfoComponent } from './contactinfo/contactinfo.component';
 import { ResumeComponent } from './resume/resume.component';
-
+import {OnboardingModule} from '@rosen-group/ngx-onboarding'
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +37,8 @@ import { ResumeComponent } from './resume/resume.component';
     DragDropModule,
     HttpClientModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    OnboardingModule
 
     ],
   providers: [],

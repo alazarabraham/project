@@ -19,3 +19,11 @@ section {
     /* width: 100vw;
     height: 100vh; */
   }
+
+  .onboarding-header{
+    visibility: hidden;
+  } 
+
+  .onboarding-buttons{
+    visibility: hidden;
+}
