@@ -201,8 +201,8 @@ export class SkillsComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-    // this.onboardingService.clearSeenSelectors();
-    // this.onboardingService.enable();
+    this.onboardingService.clearSeenSelectors();
+    this.onboardingService.enable();
     this.onboardingService.register(this.walkThrough);
 
     $(document).ready(function(){
