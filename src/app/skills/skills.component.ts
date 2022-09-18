@@ -39,7 +39,7 @@ export class SkillsComponent implements OnInit {
       {
         selector: "#stepOne",
         group: "example1",
-        position: "right",
+        position: "top",
         textAlign: "left",
         headline: "Tabs",
         details: "Have included technologies I have experience with here, please use tabs to navigate. Hover over icons for more information. Click anywhere on the page to continue."
