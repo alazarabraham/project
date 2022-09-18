@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Technology } from '../model/Technology';
 import { OnboardingService } from "@rosen-group/ngx-onboarding";
+declare var $:any;
 
 @Component({
   selector: 'app-skills',
@@ -158,6 +159,12 @@ export class SkillsComponent implements OnInit {
       description: ""},
   ];
 
+  enableHelper(){
+    this.onboardingService.clearSeenSelectors();
+    this.onboardingService.enable();
+    this.onboardingService.register(this.walkThrough);
+
+  }
 
   changeAnimationImage(e: any){
     
@@ -194,8 +201,13 @@ export class SkillsComponent implements OnInit {
     }
   }
   ngOnInit(): void {
+    this.onboardingService.enable();
     this.onboardingService.register(this.walkThrough);
-
+    const id = document.getElementById("cdk-overlay-0");
+    console.log(id);
+    $(document).ready(function(){
+      
+    });
   }
 
 
