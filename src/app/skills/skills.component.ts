@@ -32,7 +32,7 @@ export class SkillsComponent implements OnInit {
         selector: "#nav",
         group: "example2",
         position: "below",
-        textAlign: "left",
+        textAlign: "below",
         headline: "Navigation",
         details: "Navigate between pages here. Click anywhere on the page to continue."
       },
@@ -40,7 +40,7 @@ export class SkillsComponent implements OnInit {
         selector: "#stepOne",
         group: "example1",
         position: "top",
-        textAlign: "left",
+        textAlign: "top",
         headline: "Tabs",
         details: "Have included technologies I have experience with here, please use tabs to navigate. Hover over icons for more information. Click anywhere on the page to continue."
       }
