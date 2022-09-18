@@ -201,6 +201,7 @@ export class SkillsComponent implements OnInit {
     }
   }
   ngOnInit(): void {
+    this.onboardingService.clearSeenSelectors();
     this.onboardingService.enable();
     this.onboardingService.register(this.walkThrough);
     const id = document.getElementById("cdk-overlay-0");
