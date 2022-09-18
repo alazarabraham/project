@@ -42,7 +42,7 @@ export class SkillsComponent implements OnInit {
         position: "top",
         textAlign: "top",
         headline: "Tabs",
-        details: "Have included technologies I have experience with here, please use tabs to navigate. Hover over icons for more information. Click anywhere on the page to continue."
+        details: "Have included technologies I have experience with here, please use tabs for navigation. Hover over icons for more information. Click anywhere on the page to continue."
       }
     ];
    }
@@ -201,11 +201,10 @@ export class SkillsComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-    this.onboardingService.clearSeenSelectors();
-    this.onboardingService.enable();
+    // this.onboardingService.clearSeenSelectors();
+    // this.onboardingService.enable();
     this.onboardingService.register(this.walkThrough);
-    const id = document.getElementById("cdk-overlay-0");
-    console.log(id);
+
     $(document).ready(function(){
       
     });

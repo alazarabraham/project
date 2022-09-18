@@ -24,19 +24,4 @@
 /* .dropdown-toggle::after {
   display: none;
 } */
-.blob.blue {
-  animation: pulse-blue 2s infinite;
-}
 
-@keyframes pulse-blue {
-  0% {
-    color: black;
-    
-  }
-  
-
-  100% {
-    color: rgb(28, 138, 248);
-    /* transform: scale(1.5) */
-  }
-}

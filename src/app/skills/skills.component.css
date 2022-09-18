@@ -124,3 +124,58 @@
 .onboarding-buttons{
     visibility: hidden;
 }
+
+.onboarding-icon {
+    font-size: 20px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+  }
+
+  .blob {
+    
+    background: black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    height: 25px;
+    width: 25px;
+    transform: scale(1);
+    animation: pulse-black 2s infinite;
+  }
+
+  .blob.blue {
+    background: rgba(52, 172, 224, 1);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+    animation: pulse-blue 2s infinite;
+  }
+  .blob.orange {
+    background: rgba(255, 121, 63, 1);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 1);
+    animation: pulse-orange 2s infinite;
+  }
+  @keyframes pulse-blue {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+}
+
+.blobs-container {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    display: flex;
+  }
