@@ -212,13 +212,13 @@ export class SkillsComponent implements OnInit {
     //     $("#scroll").click();
         
     // });
-    const scroll = document.getElementById("scroll");
-    setTimeout(function () {
-      scroll?.click()
-    }, 2000);
-    this.onboardingService.clearSeenSelectors();
-    this.onboardingService.enable();
-    this.onboardingService.register(this.walkThrough);
+    // const scroll = document.getElementById("scroll");
+    // setTimeout(function () {
+    //   scroll?.click()
+    // }, 2000);
+    // this.onboardingService.clearSeenSelectors();
+    // this.onboardingService.enable();
+    // this.onboardingService.register(this.walkThrough);
     
   }
 
