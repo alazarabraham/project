@@ -200,14 +200,26 @@ export class SkillsComponent implements OnInit {
       this.fifthImg = true;
     }
   }
-  ngOnInit(): void {
-    // this.onboardingService.clearSeenSelectors();
-    // this.onboardingService.enable();
-    // this.onboardingService.register(this.walkThrough);
+  gotoTop() {
 
-    $(document).ready(function(){
-      
-    });
+    var scrollElem :any = document.querySelector('#moveTop');
+    scrollElem.scrollIntoView(); 
+
+   }
+  ngOnInit(): void {
+    
+    // $(document).ready(function(){
+    //     $("#scroll").click();
+        
+    // });
+    const scroll = document.getElementById("scroll");
+    setTimeout(function () {
+      scroll?.click()
+    }, 2000);
+    this.onboardingService.clearSeenSelectors();
+    this.onboardingService.enable();
+    this.onboardingService.register(this.walkThrough);
+    
   }
 
 
