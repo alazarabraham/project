@@ -146,17 +146,29 @@ export class SkillsComponent implements OnInit {
 
   servers: Technology[] = [
     {
-      name: "Websphere", img: "https://www.easyask.com/wp-content/uploads/2019/02/ibm-websphere-commerce-logo-1024x1024.gif", 
-      description: ""}, 
-    {
-      name: "JBoss", img: "https://www.svgrepo.com/show/354271/redhat.svg", 
-      description: ""},
-    {
       name: "Amazon Webservices", img: "https://www.svgrepo.com/show/376356/aws.svg", 
-      description: ""},
+      description: ""
+    },
     {
+        name: "OpenShift", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/1917px-OpenShift-LogoType.svg.png", 
+        description: ""
+    },
+    {
+      name: "Jenkins", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png", 
+      description: ""
+    },
+    {
+      name: "Websphere", img: "https://www.easyask.com/wp-content/uploads/2019/02/ibm-websphere-commerce-logo-1024x1024.gif", 
+      description: ""
+    }, 
+    {
+      name: "JBoss", img: "https://d22e4d61ky6061.cloudfront.net/sites/default/files/JBoss_1.png", 
+      description: ""
+    },
+    {      
       name: "Tomcat", img: "https://www.svgrepo.com/show/354454/tomcat.svg", 
-      description: ""},
+      description: ""
+    },
   ];
 
   enableHelper(){
